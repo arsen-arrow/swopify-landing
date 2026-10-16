@@ -102,7 +102,7 @@ function Camera({shutterRef}){
 
 function Story(){
   const shot=React.useMemo(()=>SHOTS[Math.floor(Math.random()*SHOTS.length)],[]);
-  const photoUrl='./photo-headphones.png';
+  const photoUrl='./photo-headphones.webp';
   const give=React.useMemo(()=>[[shot[0],shot[1]],['?','Або що скажеш'],['sparkles','Ще щось з полиці']],[shot]);
 
   const wrap=React.useRef(null),stage=React.useRef(null);
@@ -441,4 +441,4 @@ function Story(){
   );
 }
 
-Object.assign(window,{Story,ThingCard});
+Object.assign(window,{Story,ThingCard,Camera});

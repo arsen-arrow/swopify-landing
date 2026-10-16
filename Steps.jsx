@@ -533,4 +533,4 @@ function Steps(){
   );
 }
 
-Object.assign(window,{Steps});
+Object.assign(window,{Steps,MeetMap,LockerBox,MeetSafety,PostSafety,SP_CSS});

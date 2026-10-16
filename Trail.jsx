@@ -178,4 +178,4 @@ function Trail(){
   );
 }
 
-Object.assign(window,{Trail});
+Object.assign(window,{Trail,PTS});
