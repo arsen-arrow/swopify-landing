@@ -1,4 +1,4 @@
-const {Button,HypeButton,Icon,Badge,Logo}=window.SwopifyDesignSystem_ad534d;
+const {Button,HypeButton,Icon,Badge,Logo,ParcelCubes}=window.SwopifyDesignSystem_ad534d;
 
 /* The exchange `o` set inline in live type: same 792-unit advance as Unbounded's o,
    sitting on the baseline, inheriting font-size and colour. */
