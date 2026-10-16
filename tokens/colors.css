@@ -1,0 +1,58 @@
+/* Base palette. Never reference these directly in product code -- use the
+   semantic aliases in semantic.css. */
+:root{
+  /* Swop Violet -- the brand ramp. 600 is the brand colour (#8E26E2).
+     Magenta-violet: electric at 600, candy at 200-300, deep grape at 800+.
+     The 200/300/400/600/800 steps are the light-to-dark faces of the hype CTA. */
+  --violet-50:#FBF3FE;
+  --violet-100:#F5E2FE;
+  --violet-200:#EBC6FD;
+  --violet-300:#D9A0F8;
+  --violet-400:#C071F0;
+  --violet-500:#A63FE9;
+  --violet-600:#8E26E2;
+  --violet-700:#7418BE;
+  --violet-800:#5B1795;
+  --violet-900:#3E1266;
+  --violet-950:#1F0938;
+
+  /* Ink -- violet-tinted neutrals. Matte, never pure grey. */
+  --ink-0:#FFFFFF;
+  --ink-25:#FBFAFC;
+  --ink-50:#F7F4F9;
+  --ink-100:#EFEBF3;
+  --ink-200:#E2DCE8;
+  --ink-300:#CAC1D3;
+  --ink-400:#A096AE;
+  --ink-500:#786D8A;
+  --ink-600:#58506B;
+  --ink-700:#3F3851;
+  --ink-800:#2C2639;
+  --ink-900:#1B1724;
+  --ink-950:#100C16;
+
+  /* Semantic hues. Functional only -- these are not brand colours and must not
+     lead a layout. */
+  --grass-100:#DAF5E9;   /* trade completed */
+  --grass-500:#17A673;
+  --grass-600:#118A5F;
+  --grass-900:#0A4130;
+
+  --honey-100:#FDF0D8;   /* pending / waiting on the other side */
+  --honey-500:#E8A33D;
+  --honey-600:#C7841F;
+  --honey-900:#5A3A08;
+
+  --cherry-100:#FDE3E4;  /* declined / destructive */
+  --cherry-500:#E5484D;
+  --cherry-600:#C62F34;
+  --cherry-900:#5C1114;
+
+  --coral-100:#FFE6E0;   /* "хочу" / like -- the one warm spark in the UI */
+  --coral-500:#FF6B52;
+  --coral-600:#E44E34;
+
+  /* Fixed overlay scrims */
+  --scrim-weak:rgba(15,15,22,.32);
+  --scrim-strong:rgba(15,15,22,.62);
+}

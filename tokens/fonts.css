@@ -1,0 +1,13 @@
+/* Swopify webfonts.
+   NOTE: no font binaries were supplied with the source material, so these are
+   Google Fonts substitutions. Swap the @import for local @font-face rules if
+   licensed files arrive. See readme.md > Visual foundations > Typography. */
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700;800&family=Nunito:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap");
+
+:root{
+  /* Unbounded is reserved for the wordmark / hero headline only. */
+  --font-display:"Unbounded","Nunito","Segoe UI",system-ui,sans-serif;
+  --font-heading:"Nunito","Segoe UI",system-ui,sans-serif;
+  --font-text:"Nunito","Segoe UI",system-ui,-apple-system,sans-serif;
+  --font-mono:"JetBrains Mono",ui-monospace,"SF Mono",Menlo,monospace;
+}

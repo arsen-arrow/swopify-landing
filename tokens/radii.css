@@ -1,0 +1,14 @@
+:root{
+  --r-0:0px;
+  --r-xs:6px;
+  --r-sm:10px;
+  --r-md:14px;
+  --r-lg:20px;      /* cards, sheets, photos */
+  --r-xl:28px;
+  --r-2xl:36px;
+  --r-pill:999px;   /* every chip, tag, button and avatar */
+
+  --bw-hair:1px;
+  --bw-thick:2px;
+  --bw-focus:3px;
+}

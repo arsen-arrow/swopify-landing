@@ -1,0 +1,16 @@
+/* Minimal element defaults. Components carry their own styling; this only
+   normalises the page and the two things every design needs defined: links
+   and focus. */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--surface-page);color:var(--text-body);font:var(--type-body-md);letter-spacing:var(--ls-body);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3,h4,h5,h6{margin:0;color:var(--text-strong);letter-spacing:var(--ls-heading);text-wrap:balance}
+p{margin:0;text-wrap:pretty}
+a{color:var(--text-link);text-decoration:none;font-weight:var(--fw-semibold);transition:color var(--dur-fast) var(--ease-standard)}
+a:hover{color:var(--text-link-hover);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:2px}
+a:active{color:var(--violet-900)}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:none;box-shadow:var(--ring-focus)}
+img{max-width:100%;display:block}
+::selection{background:var(--violet-200);color:var(--violet-900)}
+@media (prefers-reduced-motion:reduce){*{animation-duration:.01ms !important;transition-duration:.01ms !important}}

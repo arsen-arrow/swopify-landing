@@ -1,0 +1,126 @@
+/* Semantic aliases -- the only layer product code should read. */
+:root{
+  /* Surfaces */
+  --surface-page:var(--ink-25);
+  --surface-card:var(--ink-0);
+  --surface-raised:var(--ink-0);
+  --surface-sunken:var(--ink-50);
+  --surface-tint:var(--violet-50);
+  --surface-brand:var(--violet-600);
+  --surface-brand-strong:var(--violet-800);
+  --surface-inverse:var(--ink-900);
+  --surface-photo:var(--ink-100);
+  --surface-glass:rgba(255,255,255,.82);
+
+  /* Text */
+  --text-strong:var(--ink-900);
+  --text-body:var(--ink-700);
+  --text-muted:var(--ink-500);
+  --text-faint:var(--ink-400);
+  --text-on-brand:var(--ink-0);
+  --text-on-inverse:var(--ink-0);
+  --text-brand:var(--violet-600);
+  --text-link:var(--violet-600);
+  --text-link-hover:var(--violet-800);
+  --text-danger:var(--cherry-600);
+  --text-success:var(--grass-600);
+
+  /* Borders */
+  --border-subtle:var(--ink-100);
+  --border-default:var(--ink-200);
+  --border-strong:var(--ink-300);
+  --border-brand:var(--violet-600);
+  --border-focus:var(--violet-300);
+
+  /* Interactive: brand */
+  --action-brand-bg:var(--violet-600);
+  --action-brand-bg-hover:var(--violet-700);
+  --action-brand-bg-active:var(--violet-800);
+  --action-brand-fg:var(--ink-0);
+
+  /* Interactive: soft (violet tint on white) */
+  --action-soft-bg:var(--violet-50);
+  --action-soft-bg-hover:var(--violet-100);
+  --action-soft-bg-active:var(--violet-200);
+  --action-soft-fg:var(--violet-700);
+
+  /* Interactive: neutral outline */
+  --action-outline-bg:transparent;
+  --action-outline-bg-hover:var(--ink-50);
+  --action-outline-bg-active:var(--ink-100);
+  --action-outline-fg:var(--ink-800);
+
+  /* Interactive: ghost */
+  --action-ghost-bg-hover:var(--ink-50);
+  --action-ghost-fg:var(--ink-700);
+
+  /* Interactive: destructive */
+  --action-danger-bg:var(--cherry-500);
+  --action-danger-bg-hover:var(--cherry-600);
+  --action-danger-fg:var(--ink-0);
+
+  /* Disabled, uniform across every control */
+  --action-disabled-bg:var(--ink-100);
+  --action-disabled-fg:var(--ink-400);
+
+  /* Trade states -- Swopify's own status vocabulary */
+  --state-offer-bg:var(--violet-50);      --state-offer-fg:var(--violet-700);
+  --state-pending-bg:var(--honey-100);    --state-pending-fg:var(--honey-900);
+  --state-done-bg:var(--grass-100);       --state-done-fg:var(--grass-900);
+  --state-declined-bg:var(--cherry-100);  --state-declined-fg:var(--cherry-900);
+  --state-want-bg:var(--coral-100);       --state-want-fg:var(--coral-600);
+
+  /* Trust levels (see readme > Trust) */
+  --trust-basic:var(--ink-400);
+  --trust-phone:var(--violet-500);
+  --trust-diia:var(--grass-500);
+}
+
+/* Dark theme tokens are authored but no dark screens ship yet.
+   Apply with <html data-theme="dark">. */
+[data-theme="dark"]{
+  --surface-page:var(--ink-950);
+  --surface-card:var(--ink-900);
+  --surface-raised:var(--ink-800);
+  --surface-sunken:#14141C;
+  --surface-tint:#1E1B33;
+  --surface-photo:var(--ink-800);
+  --surface-glass:rgba(26,26,36,.82);
+
+  --text-strong:var(--ink-0);
+  --text-body:var(--ink-200);
+  --text-muted:var(--ink-400);
+  --text-faint:var(--ink-500);
+  --text-brand:var(--violet-300);
+  --text-link:var(--violet-300);
+  --text-link-hover:var(--violet-200);
+
+  --border-subtle:#24242F;
+  --border-default:#2F2F3D;
+  --border-strong:#414154;
+
+  --action-brand-bg:var(--violet-500);
+  --action-brand-bg-hover:var(--violet-400);
+  --action-brand-bg-active:var(--violet-600);
+  --action-soft-bg:#241F3D;
+  --action-soft-bg-hover:#2E2850;
+  --action-soft-bg-active:#382F63;
+  --action-soft-fg:var(--violet-200);
+  --action-outline-bg-hover:#20202B;
+  --action-outline-fg:var(--ink-100);
+  --action-ghost-bg-hover:#20202B;
+  --action-ghost-fg:var(--ink-200);
+  --action-disabled-bg:#25252F;
+  --action-disabled-fg:var(--ink-600);
+
+  --state-offer-bg:#241F3D;      --state-offer-fg:var(--violet-200);
+  --state-pending-bg:#3A2C0F;    --state-pending-fg:var(--honey-100);
+  --state-done-bg:#0C3627;       --state-done-fg:var(--grass-100);
+  --state-declined-bg:#3E1417;   --state-declined-fg:var(--cherry-100);
+  --state-want-bg:#3D1B14;       --state-want-fg:var(--coral-100);
+
+  --shadow-sm:0 2px 6px rgba(0,0,0,.4);
+  --shadow-md:0 6px 16px rgba(0,0,0,.45);
+  --shadow-lg:0 16px 36px rgba(0,0,0,.5);
+  --ring-focus:0 0 0 var(--bw-focus) var(--violet-700);
+}

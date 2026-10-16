@@ -1,0 +1,40 @@
+:root{
+  /* Sizes. Mobile-first ladder; the web kit reuses the same steps. */
+  --fs-11:11px;  --fs-12:12px;  --fs-13:13px;  --fs-14:14px;  --fs-15:15px;
+  --fs-16:16px;  --fs-18:18px;  --fs-20:20px;  --fs-24:24px;  --fs-28:28px;
+  --fs-34:34px;  --fs-42:42px;  --fs-56:56px;  --fs-72:72px;
+
+  --lh-tight:1.08; /* @kind other */
+  --lh-snug:1.22; /* @kind other */
+  --lh-normal:1.45; /* @kind other */
+  --lh-loose:1.62; /* @kind other */
+
+  --fw-regular:400; /* @kind font */
+  --fw-medium:500; /* @kind font */
+  --fw-semibold:600; /* @kind font */
+  --fw-bold:700; /* @kind font */
+  --fw-black:800; /* @kind font */
+
+  /* Unbounded is wide; negative tracking keeps large display type from
+     sprawling. Manrope needs none below 20px. */
+  --ls-display:-.03em; /* @kind font */
+  --ls-heading:-.015em; /* @kind font */
+  --ls-body:0em; /* @kind font */
+  --ls-caps:.08em; /* @kind font */
+
+  /* Named roles. Use these, not raw sizes. */
+  --type-display-lg:var(--fw-bold) var(--fs-56)/var(--lh-tight) var(--font-heading);
+  --type-display-md:var(--fw-bold) var(--fs-42)/var(--lh-tight) var(--font-heading);
+  --type-display-sm:var(--fw-bold) var(--fs-28)/var(--lh-snug) var(--font-heading);
+  --type-title-lg:var(--fw-bold) var(--fs-24)/var(--lh-snug) var(--font-text);
+  --type-title-md:var(--fw-bold) var(--fs-20)/var(--lh-snug) var(--font-text);
+  --type-title-sm:var(--fw-semibold) var(--fs-16)/var(--lh-snug) var(--font-text);
+  --type-body-lg:var(--fw-regular) var(--fs-16)/var(--lh-normal) var(--font-text);
+  --type-body-md:var(--fw-regular) var(--fs-14)/var(--lh-normal) var(--font-text);
+  --type-body-sm:var(--fw-regular) var(--fs-13)/var(--lh-normal) var(--font-text);
+  --type-label-md:var(--fw-semibold) var(--fs-14)/1.2 var(--font-text);
+  --type-label-sm:var(--fw-semibold) var(--fs-12)/1.2 var(--font-text);
+  --type-caption:var(--fw-medium) var(--fs-12)/var(--lh-normal) var(--font-text);
+  --type-overline:var(--fw-bold) var(--fs-11)/1.2 var(--font-text);
+  --type-mono:var(--fw-regular) var(--fs-13)/var(--lh-normal) var(--font-mono);
+}
