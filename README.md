@@ -1,8 +1,8 @@
 # Swopify landing
 
-Published at https://panstrilka.github.io/swopify-landing/ using GitHub Pages from the root of `main`.
+Published at https://arsen-arrow.github.io/swopify-landing/ using GitHub Pages from the root of `main`.
 
-The phone and tablet composition (up to 900 px) lives in `Mobile.jsx` and `mobile.css`. It shares the original camera, map and locker artwork with the desktop landing. The camera story uses native scrolling without a scroll lock; the swap is an optional interactive demo. Reduced motion preferences, safe area insets, short screens and keyboard navigation are supported.
+The phone and tablet composition lives in `Mobile.jsx` and `mobile.css`. It is selected on screens up to 900 px with a coarse primary pointer and no hover. Narrow desktop windows keep the full animated desktop composition. The layout responds to viewport and primary input changes. Both compositions share the original camera, map and locker artwork. The phone camera story uses native scrolling without a scroll lock; the swap is an optional interactive demo. Reduced motion preferences, safe area insets, short screens and keyboard navigation are supported.
 
 ## Build
 

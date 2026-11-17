@@ -1,11 +1,11 @@
-/* A phone composition, not a scaled desktop canvas. The desktop story and its
-   assets remain shared; only the choreography changes at the mobile breakpoint. */
+/* A phone composition, not a scaled desktop canvas. Use it on small touch-first
+   screens; a narrow desktop window still keeps the full animated composition. */
 const {Logo,Icon}=window.SwopifyDesignSystem_ad534d;
 const cl=(v,a,b)=>Math.min(b,Math.max(a,v));
 const sg=(p,a,b)=>cl((p-a)/(b-a),0,1);
 const sm=t=>t*t*(3-2*t);
 function usePhone(){
-  const query='(max-width: 900px)';
+  const query='(max-width: 900px) and (hover: none) and (pointer: coarse)';
   const [phone,setPhone]=React.useState(()=>window.matchMedia(query).matches);
   React.useEffect(()=>{const mq=window.matchMedia(query),change=()=>setPhone(mq.matches);mq.addEventListener('change',change);return()=>mq.removeEventListener('change',change);},[]);
   return phone;
